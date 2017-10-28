@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context="irawan.org.appensiklopediaoffline.fragment.Biodata"
+>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:background="#81C784"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_view_bio"
+                    android:layout_margin="5dp"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:civ_border_width="1sp"
+                    app:civ_border_color="#EEEEEE"
+                    android:src="@drawable/ic_home_black_24dp"/>
+            <TextView
+                    android:text="Nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewBioNama" android:layout_weight="0.19" android:textSize="20sp"
+                    android:textAlignment="center"/>
+            <TextView
+
+                    android:text="NIM NIP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewBioNipNim" android:layout_weight="0.16" android:textSize="18sp"
+                    android:textAlignment="center"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.design.widget.CoordinatorLayout>
