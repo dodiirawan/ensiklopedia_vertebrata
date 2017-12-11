@@ -12,4 +12,7 @@
     <dimen name="teks_detail_margin_top">10dp</dimen>
     <dimen name="teks_detail_title">18sp</dimen>
     <dimen name="teks_detail_description">15sp</dimen>
+
+    <dimen name="ukuranTeksLabelInfo">18sp</dimen>
+    <dimen name="ukuranTeksDetailInfo">13sp</dimen>
 </resources>

@@ -32,6 +32,10 @@ public class PemValTab extends Fragment {
 
     private TextView textViewInfoNama;
     private TextView textViewInfoNipNim;
+    private TextView textViewInfoFakultas;
+    private TextView textViewInfoProdi;
+    private TextView textViewInfoKeahlian;
+
     private ImageView image_view_val_pem;
     DatabaseHelper db;
 
@@ -53,10 +57,18 @@ public class PemValTab extends Fragment {
 
         textViewInfoNama = (TextView) view.findViewById(R.id.textViewInfoNama);
         textViewInfoNipNim = (TextView) view.findViewById(R.id.textViewInfoNipNim);
+        textViewInfoFakultas = (TextView) view.findViewById(R.id.textViewInfoFakultas);
+        textViewInfoProdi = (TextView) view.findViewById(R.id.textViewInfoProdi);
+        textViewInfoKeahlian = (TextView) view.findViewById(R.id.textViewInfoKeahlian);
+
         image_view_val_pem = (ImageView) view.findViewById(R.id.image_view_val_pem);
 
         textViewInfoNama.setText(person.getNama());
         textViewInfoNipNim.setText(person.getNim_nip());
+
+        textViewInfoFakultas.setText(person.getFakultas());
+        textViewInfoProdi.setText(person.getProgramstudi());
+        textViewInfoKeahlian.setText(person.getProgramkeahlian());
 
 //        Toast.makeText(context,person.getNama(), Toast.LENGTH_SHORT).show();
 

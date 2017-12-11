@@ -36,6 +36,9 @@ public class Biodata extends Fragment {
 
     private TextView textViewBioNama;
     private TextView textViewBioNipNim;
+    private TextView textViewBioAlamat;
+    private TextView textViewPekerjaan;
+
     private ImageView image_view_bio;
 
     DatabaseHelper db;
@@ -50,10 +53,15 @@ public class Biodata extends Fragment {
 
         textViewBioNama = (TextView) view.findViewById(R.id.textViewBioNama);
         textViewBioNipNim = (TextView) view.findViewById(R.id.textViewBioNipNim);
+        textViewBioAlamat = (TextView) view.findViewById(R.id.textViewBioAlamat);
+        textViewPekerjaan = (TextView) view.findViewById(R.id.textViewBioPekerjaan);
+
         image_view_bio = (ImageView) view.findViewById(R.id.image_view_bio);
 
         textViewBioNama.setText(p.getNama());
         textViewBioNipNim.setText(p.getNim_nip());
+        textViewPekerjaan.setText(p.getPekerjaan());
+        textViewBioAlamat.setText(p.getAlamat());
 
         try {
             byte[] decodeString = Base64.decode(p.getFoto(), Base64.DEFAULT);
